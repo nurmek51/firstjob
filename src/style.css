@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+/* Custom font-face for Mabry Pro - using Inter as fallback */
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('./assets/fonts/MabryPro-Regular.woff2') format('woff2'),
+       url('./assets/fonts/MabryPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('./assets/fonts/MabryPro-Medium.woff2') format('woff2'),
+       url('./assets/fonts/MabryPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mabry Pro';
+  src: url('./assets/fonts/MabryPro-Medium.woff2') format('woff2'),
+       url('./assets/fonts/MabryPro-Medium.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+:root {
+  /* Color tokens from Figma */
+  --color-primary: #15BAAA;
+  --color-white: #FFFFFF;
+  --color-text-primary: rgba(0, 0, 0, 0.87);
+  --color-text-secondary: rgba(0, 0, 0, 0.54);
+  --color-text-tertiary: rgba(0, 0, 0, 0.32);
+  --color-gray-light: #F2F2F2;
+  --color-border: #DFDFDF;
+  
+  /* Shadow tokens */
+  --shadow-bottom: 0px -14px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Spacing tokens */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  
+  /* Border radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Mabry Pro', 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+}
+
+/* Mobile-only container */
+#app {
+  max-width: 394px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--color-white);
+  position: relative;
+}
+
+/* Utility classes */
+.text-primary { color: var(--color-text-primary); }
+.text-secondary { color: var(--color-text-secondary); }
+.text-tertiary { color: var(--color-text-tertiary); }
+.bg-gray-light { background-color: var(--color-gray-light); }
+.border-gray { border-color: var(--color-border); }
