@@ -67,7 +67,7 @@ const selectedCount = computed(() => cartStore.itemCount)
 const totalPrice = computed(() => cartStore.totalAmount)
 
 const handleClose = () => {
-  router.push('/sales')
+  router.push('/')
 }
 
 const handleCategoryClick = (category: Category) => {

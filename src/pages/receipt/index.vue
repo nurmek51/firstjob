@@ -85,7 +85,7 @@ const goBack = () => {
 }
 
 const finish = () => {
-  router.push('/sales')
+  router.push('/')
 }
 
 onMounted(() => {

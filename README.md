@@ -109,7 +109,7 @@ The app communicates with a backend API using Axios:
 
 ## Pages
 
-- **Sales** (`/sales`) - Main sales page with history and new sale button
+- **Sales** (`/`) - Main sales page with history and new sale button
 - **Categories** (`/categories`) - Product categories selection
 - **Products** (`/products`) - Product listing with search and cart functionality
 - **Checkout** (`/checkout`) - Order confirmation and payment method selection

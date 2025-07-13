@@ -3,18 +3,18 @@ import type { RouteRecordRaw } from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
   {
-    path: '/',
-    redirect: '/sales',
-  },
-  {
     path: '/categories',
     name: 'categories',
     component: () => import('@/pages/categories/index.vue'),
   },
   {
-    path: '/sales',
+    path: '/',
     name: 'sales',
     component: () => import('@/pages/sales/index.vue'),
+  },
+  {
+    path: '/sales',
+    redirect: '/',
   },
   {
     path: '/products',
