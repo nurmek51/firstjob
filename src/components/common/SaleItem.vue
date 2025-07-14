@@ -60,20 +60,21 @@ const handleClick = () => {
   position: absolute;
   left: 1px;
   top: 0;
-  width: 101px;
+  width: 265px;
   height: 16px;
   font-size: 13px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.54);
   line-height: 1.2;
   margin: 0;
+  white-space: nowrap; /* prevent wrapping */
 }
 
 .sale-description {
   position: absolute;
   left: 0;
   top: 20px;
-  max-width: 249px; 
+  width: 180px; 
   height: 21px;
   font-size: 16px;
   font-weight: 400;
@@ -81,19 +82,23 @@ const handleClick = () => {
   line-height: 1.3;
   margin: 0;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .sale-description-long {
-  width: 249px;
+  width: 180px;
   height: 63px;
   white-space: normal;
+  overflow: visible;
+  text-overflow: initial;
 }
 
 .sale-amount {
   position: absolute;
   right: 0;
   top: 20px;
-  width: 69px;
+  width: 90px;
   height: 21px;
   font-size: 16px;
   font-weight: 400;
